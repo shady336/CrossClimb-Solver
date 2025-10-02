@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CrossClimb Helper</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            width: 250px;
+            padding: 10px;
+        }
+
+        #data {
+            white-space: pre-wrap;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="margin-top:0; margin-bottom:16px; text-align:center;">ClimbMate: CrossClimb solver using AI</h2>
+    <button id="solveLadderBtn">Solve Ladder using AI</button>
+    <div id="solveLadderResponse" style="margin-top:12px; white-space:pre-wrap;"></div>
+    <hr>
+    <button id="solveEndsBtn">Solve Ends using AI</button>
+    <div id="solveEndsResponse" style="margin-top:12px; white-space:pre-wrap;"></div>
+    <div id="spinner" style="display:none; text-align:center; margin-top:16px;">
+        <svg width="32" height="32" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill="#333">
+            <circle cx="50" cy="50" r="35" stroke="#ccc" stroke-width="10" fill="none"/>
+            <circle cx="50" cy="50" r="35" stroke="#0078d7" stroke-width="10" fill="none" stroke-dasharray="55 100" stroke-linecap="round">
+                <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="1s" repeatCount="indefinite"/>
+            </circle>
+        </svg>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>

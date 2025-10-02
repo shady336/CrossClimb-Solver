@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "LocalDev": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7080",
+      "launchBrowser": false,
+      "environmentVariables": {
+        "AZURE_FUNCTIONS_ENVIRONMENT": "Development",
+        "APP_ENV": "Development"
+      }
+    }
+  }
+}

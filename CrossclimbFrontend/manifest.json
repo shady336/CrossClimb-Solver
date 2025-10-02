@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "CrossClimb Helper",
+    "version": "1.0",
+    "description": "Scrape and autofill data from CrossClimb game.",
+    "permissions": [
+        "scripting",
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://crossclimb-game.com/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
